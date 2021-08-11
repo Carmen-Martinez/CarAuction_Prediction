@@ -2,7 +2,10 @@
 
 In this Web Application I utilize data science tools and techniques to predict used car selling prices at auctions.
  
-I used Random Forest Regression to get my predictions with a 72% accuracy. 
+I used Random Forest Regression to get my prediction with a 72% accuracy. 
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+## Repository Info
 
 In this repository you will find the model I used and that you can download
 [CarAuctionPriceFinal.pkl]
@@ -10,7 +13,6 @@ In this repository you will find the model I used and that you can download
 You can also find the original data file [car_prices.csv] + the cleaned date file [CarSalePrice.csv]
 
 Finally you can find my source file [CarApp.py]
-
 
 ## Issues
 
