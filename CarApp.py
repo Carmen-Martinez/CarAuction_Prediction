@@ -10,8 +10,8 @@ import pandas as pd
 import pickle
 from PIL import Image
 
-PATH = "C:/AppFiles/"
-image = Image.open(PATH + "logo4.png")
+PATH = "AppFiles/"
+image = Image.open("logo4.png")
 st.image(image, use_column_width=True)
 
 st.title('CAR AUCTION SALE PREDICTION')
