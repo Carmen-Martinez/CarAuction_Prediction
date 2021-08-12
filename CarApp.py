@@ -10,15 +10,15 @@ import pandas as pd
 import pickle
 from PIL import Image
 
-
-image = Image.open("C:/Users/Carmen/Documents/AppCar/logo4.png")
+PATH = "C:/Users/Carmen/Documents/AppCar/source_file/carauction_prediction/"
+image = Image.open(PATH + "logo4.png")
 st.image(image, use_column_width=True)
 
 st.title('CAR AUCTION SALE PREDICTION')
 
 st.sidebar.header('User Input Features')
 
-car2 = pd.read_csv("C:/Users/Carmen/Documents/AppCar/CarSalePrices.csv")
+car2 = pd.read_csv(PATH + "CarSalePrices.csv")
 
 def user_input_features():
     make_model = st.sidebar.selectbox('Make/Model', set(car2['make_model']))
@@ -50,7 +50,7 @@ def user_input_features():
 input_df = user_input_features()
 
 
-car_raw = pd.read_csv("C:/Users/Carmen/Documents/AppCar/CarSalePrices.csv")
+car_raw = pd.read_csv(PATH + "CarSalePrices.csv")
 
 car = car_raw.drop(columns=['sellingprice'])
 df = pd.concat([input_df, car], axis=0)
@@ -71,7 +71,7 @@ st.subheader('User Input Features')
 st.write('Currently using example input parameters (shown below).')
 st.write(df)
 
-load_rgr = pickle.load(open('C:/Users/Carmen/Documents/AppCar/CarAuctionPriceFinal.pkl', 'rb'))
+load_rgr = pickle.load(open(PATH + "CarAuctionPriceFinal.pkl", 'rb'))
 
 prediction = load_rgr.predict(df)
 
