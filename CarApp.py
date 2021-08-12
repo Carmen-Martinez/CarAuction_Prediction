@@ -10,7 +10,7 @@ import pandas as pd
 import pickle
 from PIL import Image
 
-PATH = "C:/Users/Carmen/Documents/AppCar/source_file/carauction_prediction/"
+PATH = "C:/AppFiles/"
 image = Image.open(PATH + "logo4.png")
 st.image(image, use_column_width=True)
 
