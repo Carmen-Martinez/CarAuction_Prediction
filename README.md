@@ -1,11 +1,13 @@
-# WILL DEPLOY SOON!
+
 # Used Car Selling Price Prediction
+
+[CLICK HERE](https://share.streamlit.io/carmen-martinez/carauction_prediction/main/CarApp.py) to be directed to the web app!
 
 In this Web Application I utilize data science tools and techniques to predict used car selling prices at auctions.
  
 I used Random Forest Regression to get my prediction with a 72% accuracy. 
 
-Data: https://www.kaggle.com/tunguz/used-car-auction-prices
+##### Data: https://www.kaggle.com/tunguz/used-car-auction-prices
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 ## Repository Info
 
